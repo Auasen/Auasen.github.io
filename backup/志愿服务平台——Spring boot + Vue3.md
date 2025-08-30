@@ -46,7 +46,7 @@ AI助手
 - 在后端项目的`SecurityConfig.java` 文件中，配置了 `BCryptPasswordEncoder` 作为密码编码器。
 - 在 `UserServiceImpl.java` 文件中，用户注册时通过 passwordEncoder.encode(password) 对密码进行加密存储，用户登录时则通过 passwordEncoder.matches(password, user.getPassword()) 来验证密码。
 这意味着前端在用户输入密码后，会将明文密码发送到后端，由后端进行加密处理和存储，并在后续的认证过程中进行比对。
-> [!NOTE]
+> [!TIP]
 > 经老师指点，这种在后端加密的方法并不是很安全，易被截获密码，导致账号安全问题，考虑将加密处理逻辑在前端执行。
 
 # 值得学习的知识点
