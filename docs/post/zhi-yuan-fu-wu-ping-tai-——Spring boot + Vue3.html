@@ -76,8 +76,106 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><h2>该平台于暑期小学期期间完成</h2>
-<p>志愿服务平台是一个用于为高校或其他机构提供志愿报名，志愿展示，志愿管理等功能的平台。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/24450ef8-f2dc-4f47-8446-3579ad1bc0cd"><img width="1021" height="565" alt="Image" src="https://github.com/user-attachments/assets/24450ef8-f2dc-4f47-8446-3579ad1bc0cd" style="max-width: 100%; height: auto; max-height: 565px;"></a></p></div>
+<p>志愿服务平台是一个用于为高校或其他机构提供志愿报名，志愿展示，志愿管理等功能的平台。该项目是一个前后端分离的支援管理系统。后端负责数据管理、业务逻辑处理和API接口提供，前端则负责用户界面展示和交互逻辑。这种架构模式有助于实现模块化开发，提高开发效率和系统可维护性。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/24450ef8-f2dc-4f47-8446-3579ad1bc0cd"><img width="1021" height="565" alt="Image" src="https://github.com/user-attachments/assets/24450ef8-f2dc-4f47-8446-3579ad1bc0cd" style="max-width: 100%; height: auto; max-height: 565px;"></a></p>
+<h2>技术栈</h2>
+<p>#后端技术栈<br>
+后端部分主要采用Java生态系统，具体技术栈如下：</p>
+<ul>
+<li>
+<p>Spring Boot 3.2.3 : 作为核心后端框架，Spring Boot 提供了快速开发和部署的能力，简化了配置过程，使开发者能够专注于业务逻辑的实现。</p>
+</li>
+<li>
+<p>MySQL : 关系型数据库，用于存储博客文章、用户信息、评论等核心数据。其稳定性和可靠性使其成为数据持久化的常用选择。</p>
+</li>
+<li>
+<p>MyBatis-Plus 3.5.5 : 这是一个基于MyBatis的增强工具，极大地简化了数据库操作。它提供了强大的CRUD功能，减少了SQL语句的编写量，提高了开发效率。</p>
+</li>
+<li>
+<p>Spring Security : 安全框架，用于实现用户认证和授权功能，确保系统的安全性。它提供了灵活的配置选项，可以实现细粒度的权限控制。</p>
+</li>
+<li>
+<p>Lombok 1.18.30 : 一个Java库，通过注解自动生成样板代码（如getter、setter、构造函数等），从而使代码更加简洁和可读。</p>
+</li>
+<li>
+<p>Java 21 : 项目使用的Java版本，该版本带来了性能提升和新的语言特性。<br>
+#前端技术栈<br>
+前端部分主要采用Vue技术栈，具体如下：</p>
+</li>
+<li>
+<p>Vue 3.5.17 : 渐进式JavaScript框架，用于构建用户界面。其组合式API（Composition API）提供了更灵活的逻辑组织方式，增强了代码的复用性。</p>
+</li>
+<li>
+<p>Element Plus 2.10.2 : 一套基于Vue 3的桌面端UI组件库，提供了丰富的预构建组件，加速了前端界面的开发过程，并确保了界面的美观性和一致性。</p>
+</li>
+<li>
+<p>Vue Router 4.5.1 : Vue官方的路由管理器，用于实现单页应用（SPA）中的页面导航和路由管理。</p>
+</li>
+<li>
+<p>Vite 7.0.0 : 新一代前端构建工具，以其快速的开发服务器启动和热模块更新（HMR）能力，显著提升了前端开发效率。</p>
+</li>
+<li>
+<p>Axios 1.10.0 : 基于Promise的HTTP客户端，用于前端向后端发送HTTP请求，进行数据交互。</p>
+</li>
+<li>
+<p>xlsx 0.18.5 : 一个用于处理Excel文件的JavaScript库，可用于实现数据的导入导出功能。</p>
+</li>
+</ul>
+<p>#Builder with MCP</p>
+<p>以下是您当前项目的总结，包括项目内容、技术栈和值得学习的知识点：</p>
+<h3>项目概述</h3>
+<p>该项目是一个前后端分离的博客系统。后端负责数据管理、业务逻辑处理和API接口提供，前端则负责用户界面展示和交互逻辑。这种架构模式有助于实现模块化开发，提高开发效率和系统可维护性。</p>
+<h3>技术栈 后端技术栈</h3>
+<p>后端部分主要采用Java生态系统，具体技术栈如下：</p>
+<ul>
+<li>
+<p>Spring Boot 3.2.3 : 作为核心后端框架，Spring Boot 提供了快速开发和部署的能力，简化了配置过程，使开发者能够专注于业务逻辑的实现。</p>
+</li>
+<li>
+<p>MySQL : 关系型数据库，用于存储博客文章、用户信息、评论等核心数据。其稳定性和可靠性使其成为数据持久化的常用选择。</p>
+</li>
+<li>
+<p>MyBatis-Plus 3.5.5 : 这是一个基于MyBatis的增强工具，极大地简化了数据库操作。它提供了强大的CRUD功能，减少了SQL语句的编写量，提高了开发效率。</p>
+</li>
+<li>
+<p>Spring Security : 安全框架，用于实现用户认证和授权功能，确保系统的安全性。它提供了灵活的配置选项，可以实现细粒度的权限控制。</p>
+</li>
+<li>
+<p>Lombok 1.18.30 : 一个Java库，通过注解自动生成样板代码（如getter、setter、构造函数等），从而使代码更加简洁和可读。</p>
+</li>
+<li>
+<p>Java 21 : 项目使用的Java版本，该版本带来了性能提升和新的语言特性。 前端技术栈<br>
+前端部分主要采用Vue技术栈，具体如下：</p>
+</li>
+<li>
+<p>Vue 3.5.17 : 渐进式JavaScript框架，用于构建用户界面。其组合式API（Composition API）提供了更灵活的逻辑组织方式，增强了代码的复用性。</p>
+</li>
+<li>
+<p>Element Plus 2.10.2 : 一套基于Vue 3的桌面端UI组件库，提供了丰富的预构建组件，加速了前端界面的开发过程，并确保了界面的美观性和一致性。</p>
+</li>
+<li>
+<p>Vue Router 4.5.1 : Vue官方的路由管理器，用于实现单页应用（SPA）中的页面导航和路由管理。</p>
+</li>
+<li>
+<p>Vite 7.0.0 : 新一代前端构建工具，以其快速的开发服务器启动和热模块更新（HMR）能力，显著提升了前端开发效率。</p>
+</li>
+<li>
+<p>Axios 1.10.0 : 基于Promise的HTTP客户端，用于前端向后端发送HTTP请求，进行数据交互。</p>
+</li>
+<li>
+<p>xlsx 0.18.5 : 一个用于处理Excel文件的JavaScript库，可用于实现数据的导入导出功能。</p>
+</li>
+</ul>
+<h1>值得学习的知识点</h1>
+<ol>
+<li>前后端分离架构实践 : 深入理解前后端如何通过RESTful API进行通信，包括API设计原则、数据格式约定、跨域资源共享（CORS）处理以及认证机制的实现。</li>
+<li>Spring Boot 3 的核心特性与生态 : 学习Spring Boot 3的新功能、配置方式以及如何集成Spring Data JPA、Spring AOP等其他Spring项目，以构建功能完善的企业级应用。<br>
+3.MyBatis-Plus 的高级用法 : 掌握MyBatis-Plus的条件构造器、代码生成器、分页插件等高级功能，以更高效地进行数据库操作和开发。<br>
+4.Vue 3 组合式API 的应用 : 深入理解Vue 3的组合式API，包括 ref 、 reactive 、 computed 、 watch 等，以及如何利用它们来组织可复用、可测试的组件逻辑。<br>
+5.Vite 的性能优势与配置 : 学习Vite的构建原理，掌握其开发服务器配置、插件系统以及生产环境打包优化策略，以实现更快的开发和部署。<br>
+6.Element Plus 组件库的定制与扩展 : 了解Element Plus的组件使用方法，并学习如何根据项目需求进行主题定制和组件扩展，以满足特定的UI/UX要求。</li>
+<li>Spring Security 的安全机制 : 深入研究Spring Security的认证和授权流程，包括基于Token的认证（如JWT）、角色权限管理以及安全漏洞防范措施。</li>
+</ol></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
