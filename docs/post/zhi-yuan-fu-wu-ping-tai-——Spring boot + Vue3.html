@@ -45,7 +45,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 
 </style>
-
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style>
 
 
 
@@ -99,6 +99,31 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>Axios 1.10.0 : 基于Promise的HTTP客户端，用于前端向后端发送HTTP请求，进行数据交互。</li>
 <li>xlsx 0.18.5 : 一个用于处理Excel文件的JavaScript库，可用于实现数据的导入导出功能。</li>
 </ul>
+<h2><strong>平台展示</strong></h2>
+<p>首页<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/61cf9833-40e9-483b-b8fc-fc523064f575"><img width="2000" height="1412" alt="Image" src="https://github.com/user-attachments/assets/61cf9833-40e9-483b-b8fc-fc523064f575" style="max-width: 100%; height: auto; max-height: 1412px;"></a><br>
+志愿风采：展示全校有记录的志愿时长考前的学生<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/74874042-2a3d-4cda-b515-39e5218839c4"><img width="2000" height="1350" alt="Image" src="https://github.com/user-attachments/assets/74874042-2a3d-4cda-b515-39e5218839c4" style="max-width: 100%; height: auto; max-height: 1350px;"></a><br>
+志愿时长：展示每个学院的学生时长<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a5802701-fbcc-4462-93f1-039cb0c6b777"><img width="2000" height="1338" alt="Image" src="https://github.com/user-attachments/assets/a5802701-fbcc-4462-93f1-039cb0c6b777" style="max-width: 100%; height: auto; max-height: 1338px;"></a><br>
+志愿队伍：展示注册在案的志愿队伍<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0af9ecba-9f11-45f4-b7c0-88ed3633884d"><img width="2000" height="1188" alt="Image" src="https://github.com/user-attachments/assets/0af9ecba-9f11-45f4-b7c0-88ed3633884d" style="max-width: 100%; height: auto; max-height: 1188px;"></a><br>
+志愿报名：进行志愿报名<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a7e07d18-f51e-4c07-8400-af497ab73b2c"><img width="2000" height="1193" alt="Image" src="https://github.com/user-attachments/assets/a7e07d18-f51e-4c07-8400-af497ab73b2c" style="max-width: 100%; height: auto; max-height: 1193px;"></a><br>
+志愿通知：查看报名详情<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5f971caf-667a-4300-8291-665ba1702a44"><img width="2000" height="1194" alt="Image" src="https://github.com/user-attachments/assets/5f971caf-667a-4300-8291-665ba1702a44" style="max-width: 100%; height: auto; max-height: 1194px;"></a><br>
+AI助手<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/dae65e54-9f95-47b8-b96d-2dda7763f884"><img width="897" height="684" alt="Image" src="https://github.com/user-attachments/assets/dae65e54-9f95-47b8-b96d-2dda7763f884" style="max-width: 100%; height: auto; max-height: 684px;"></a></p>
+<h2><strong>项目细节</strong></h2>
+<p>该项目的密码加密是在<strong>后端</strong>进行的，采用的是 <strong>BCrypt 加密算法</strong>。<br>
+具体来说：</p>
+<ul>
+<li>在后端项目的<code class="notranslate">SecurityConfig.java</code> 文件中，配置了 <code class="notranslate">BCryptPasswordEncoder</code> 作为密码编码器。</li>
+<li>在 <code class="notranslate">UserServiceImpl.java</code> 文件中，用户注册时通过 passwordEncoder.encode(password) 对密码进行加密存储，用户登录时则通过 passwordEncoder.matches(password, user.getPassword()) 来验证密码。<br>
+这意味着前端在用户输入密码后，会将明文密码发送到后端，由后端进行加密处理和存储，并在后续的认证过程中进行比对。</li>
+</ul>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>经老师指点，这种在后端加密的方法并不是很安全，易被截获密码，导致账号安全问题，考虑将加密处理逻辑在前端执行。</p>
+</div>
 <h1>值得学习的知识点</h1>
 <ol>
 <li>前后端分离架构实践 : 深入理解前后端如何通过RESTful API进行通信，包括API设计原则、数据格式约定、跨域资源共享（CORS）处理以及认证机制的实现。</li>

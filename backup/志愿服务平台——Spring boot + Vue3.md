@@ -22,6 +22,31 @@
 - Axios 1.10.0 : 基于Promise的HTTP客户端，用于前端向后端发送HTTP请求，进行数据交互。
 - xlsx 0.18.5 : 一个用于处理Excel文件的JavaScript库，可用于实现数据的导入导出功能。
 
+## **平台展示**
+首页
+<img width="2549" height="1412" alt="Image" src="https://github.com/user-attachments/assets/61cf9833-40e9-483b-b8fc-fc523064f575" />
+志愿风采：展示全校有记录的志愿时长考前的学生
+<img width="2547" height="1350" alt="Image" src="https://github.com/user-attachments/assets/74874042-2a3d-4cda-b515-39e5218839c4" />
+志愿时长：展示每个学院的学生时长
+<img width="2553" height="1338" alt="Image" src="https://github.com/user-attachments/assets/a5802701-fbcc-4462-93f1-039cb0c6b777" />
+志愿队伍：展示注册在案的志愿队伍
+<img width="2559" height="1188" alt="Image" src="https://github.com/user-attachments/assets/0af9ecba-9f11-45f4-b7c0-88ed3633884d" />
+志愿报名：进行志愿报名
+<img width="2553" height="1193" alt="Image" src="https://github.com/user-attachments/assets/a7e07d18-f51e-4c07-8400-af497ab73b2c" />
+志愿通知：查看报名详情
+<img width="2556" height="1194" alt="Image" src="https://github.com/user-attachments/assets/5f971caf-667a-4300-8291-665ba1702a44" />
+AI助手
+<img width="897" height="684" alt="Image" src="https://github.com/user-attachments/assets/dae65e54-9f95-47b8-b96d-2dda7763f884" />
+
+## **项目细节**
+该项目的密码加密是在**后端**进行的，采用的是 **BCrypt 加密算法**。
+具体来说：
+- 在后端项目的`SecurityConfig.java` 文件中，配置了 `BCryptPasswordEncoder` 作为密码编码器。
+- 在 `UserServiceImpl.java` 文件中，用户注册时通过 passwordEncoder.encode(password) 对密码进行加密存储，用户登录时则通过 passwordEncoder.matches(password, user.getPassword()) 来验证密码。
+这意味着前端在用户输入密码后，会将明文密码发送到后端，由后端进行加密处理和存储，并在后续的认证过程中进行比对。
+> [!NOTE]
+> 经老师指点，这种在后端加密的方法并不是很安全，易被截获密码，导致账号安全问题，考虑将加密处理逻辑在前端执行。
+
 # 值得学习的知识点
 1. 前后端分离架构实践 : 深入理解前后端如何通过RESTful API进行通信，包括API设计原则、数据格式约定、跨域资源共享（CORS）处理以及认证机制的实现。
 2. Spring Boot 3 的核心特性与生态 : 学习Spring Boot 3的新功能、配置方式以及如何集成Spring Data JPA、Spring AOP等其他Spring项目，以构建功能完善的企业级应用。
