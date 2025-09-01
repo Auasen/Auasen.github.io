@@ -108,7 +108,26 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>附件1.xlsx：乡村耕地和农作物的基本情况，如地块类型、面积、适合种植的作物等。<br>
 附件2.xlsx：2023年的农作物种植和统计数据，包括亩产量、销售价格、种植成本等。<br>
 附件3：用于填写问题解答的模板文件。</p>
-<p>通过参阅获奖论文，问题1，2，3分别用到了粒子群，模拟退火，多目标优化，其中问题1更多被使用的方法是线性规划或整数规划。</p></div>
+<p>通过参阅获奖论文，问题1，2，3分别用到了<strong>粒子群，模拟退火，多目标优化</strong>，其中问题1更多被使用的方法是<strong>线性规划或整数规划</strong>。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/df7767bd-04b0-465b-9459-ff07efb9b26b"><img width="932" height="712" alt="Image" src="https://github.com/user-attachments/assets/df7767bd-04b0-465b-9459-ff07efb9b26b" style="max-width: 100%; height: auto; max-height: 712px;"></a></p>
+<h3>问题2</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e7d7ef1f-2fbd-418e-9121-d76048c031eb"><img width="890" height="556" alt="Image" src="https://github.com/user-attachments/assets/e7d7ef1f-2fbd-418e-9121-d76048c031eb" style="max-width: 100%; height: auto; max-height: 556px;"></a></p>
+<h3>问题3</h3>
+<p><strong>替代性和互补性分析：</strong><br>
+可以通过协方差矩阵或者相关性系数来量化不同农作物之间的替代性和互补性。<br>
+替代性：例如某些豆类和谷物可能在市场上具有替代关系。<br>
+互补性：例如某些作物轮作可能会提升土壤肥力，使其互补性增强。</p>
+<p><strong>模型调整：</strong><br>
+在问题二的基础上，加入农作物的替代性和互补性约束。通过引入相关系数矩阵调整种植方案，使整体组合效益更高。</p>
+<p><strong>目标函数：</strong><br>
+目标依然是收益最大化，但需要在作物选择上综合考虑它们之间的替代性和互补性，从而优化整个系统的收益。</p>
+<p><strong>求解方法：</strong><br>
+采用多目标优化模型，在最大化收益的同时，最小化作物之间的替代冲突，增强互补性。可以使用多目标优化算法如遗传算法或基于Pareto前沿的优化方法。</p>
+<p><strong>创新点与改进点：</strong><br>
+利用作物间的相互作用来优化种植组合，增加实际种植策略的复杂度和现实性。<br>
+通过协方差矩阵的引入，使模型不仅是静态收益最大化，而是通过综合分析作物间的复杂关系，提高整体收益。</p>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>参考<a href="https://blog.csdn.net/qq_33690821/article/details/141940745" rel="nofollow">CSDN 2024数学建模国赛C题思路分析</a></p>
+</div></div>
 <div style="font-size:small;margin-top:8px;float:right;">仅供个人学习参考使用</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
